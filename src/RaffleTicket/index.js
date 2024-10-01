@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 
 import './style.css';
 
-function formatNumber(num, size = 3) {
+function formatNumber(num, size = 4) {
   return `${num}`.padStart(size, '0');
 }
 
