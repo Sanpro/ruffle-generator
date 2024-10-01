@@ -2,10 +2,8 @@ import React, { PureComponent } from 'react';
 
 import './style.css';
 
-function formatNumber(num, size = 4) {
-  let s = num + '';
-  while (s.length < size) s = '0' + s;
-  return s;
+function formatNumber(num, size = 3) {
+  return `${num}`.padStart(size, '0');
 }
 
 class RaffleTicket extends PureComponent {
@@ -13,14 +11,14 @@ class RaffleTicket extends PureComponent {
     title: 'Viaje de fin de curso',
     description: 'Lorem ipsum',
     price: 1,
-    number: 1
+    numbers: [0]
   }
 
   render() {
-    const { title, description, price, number } = this.props;
+    const { title, description, price, numbers } = this.props;
 
-    const RuffleNumber = () => (
-      <span className="number text-primary">{formatNumber(number)}</span>
+    const RuffleNumber = (props) => (
+      <span className="number text-primary ml-3">{formatNumber(props.num)}</span>      
     );
 
     return (
@@ -36,7 +34,9 @@ class RaffleTicket extends PureComponent {
                 <label>Telf.:</label>
                 <input type="text" className="form-control -user-fill" />
               </div>
-              <RuffleNumber />
+              {numbers.map((num) => (
+                <RuffleNumber num={num} />
+              ))}  
             </form>
           </div>
           <div className="col-1">
@@ -53,7 +53,9 @@ class RaffleTicket extends PureComponent {
                 <span className="price">{price}€</span>
               </div>
               <div className="col text-right">
-                <RuffleNumber />
+                {numbers.map((num) => (
+                  <RuffleNumber num={num} />
+                ))}  
               </div>
             </footer>
           </div>
