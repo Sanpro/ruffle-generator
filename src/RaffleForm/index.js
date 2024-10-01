@@ -57,12 +57,25 @@ class RaffleForm extends PureComponent {
             className="form-control"
           />
         </div>
+        <div className="form-group">
+          <label htmlFor="numbersByTicket">
+            Números por boleto
+          </label>
+          <Text
+            type="number"
+            field="numbersByTicket"
+            id="numbersByTicket"
+            className="form-control"
+            max="2"
+          />
+        </div>
         <div className="-actions">
           <button type="submit" className="btn btn-primary">Generar</button>
           <button type="button" className="btn btn-secondary" onClick={() => window.print()}>Imprimir</button>
         </div>
         <div>
           <p className="small">This tool has been made with love for Andrés Inga.</p>
+          <p className="small">Sanpro added support to include multiple numbers per ticket.</p>
         </div>
       </Form>
     );
