@@ -18,7 +18,7 @@ class RaffleTicket extends PureComponent {
     const { title, description, price, numbers } = this.props;
 
     const RuffleNumber = (props) => (
-      <span className="number text-primary ml-3">{formatNumber(props.num)}</span>      
+      <span className="number text-primary ml-2">{formatNumber(props.num)}</span>      
     );
 
     return (
