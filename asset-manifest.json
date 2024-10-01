@@ -1,0 +1,13 @@
+{
+  "main.css": "/ruffle-generator/static/css/main.26f5fcc4.chunk.css",
+  "main.js": "/ruffle-generator/static/js/main.3ae84a56.chunk.js",
+  "main.js.map": "/ruffle-generator/static/js/main.3ae84a56.chunk.js.map",
+  "runtime~main.js": "/ruffle-generator/static/js/runtime~main.95408cc0.js",
+  "runtime~main.js.map": "/ruffle-generator/static/js/runtime~main.95408cc0.js.map",
+  "static/js/2.1b84ef05.chunk.js": "/ruffle-generator/static/js/2.1b84ef05.chunk.js",
+  "static/js/2.1b84ef05.chunk.js.map": "/ruffle-generator/static/js/2.1b84ef05.chunk.js.map",
+  "index.html": "/ruffle-generator/index.html",
+  "precache-manifest.ce8b8f44f62b0599ce5f80f560e1c99f.js": "/ruffle-generator/precache-manifest.ce8b8f44f62b0599ce5f80f560e1c99f.js",
+  "service-worker.js": "/ruffle-generator/service-worker.js",
+  "static/css/main.26f5fcc4.chunk.css.map": "/ruffle-generator/static/css/main.26f5fcc4.chunk.css.map"
+}
